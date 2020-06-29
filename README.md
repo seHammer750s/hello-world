@@ -1,13 +1,15 @@
-# hello-world
+# hello-world welcome to studioHammer's room.
 
-twitter への 連携 
-https://twitter.com/eminneVairemont
+## [twitter](https://twitter.com/eminneVairemont)
 
-youtube への連携
-https://www.youtube.com/channel/UCo2ZY3vGqcxTotc_piQMtZg
+## [youtube](https://www.youtube.com/channel/UCo2ZY3vGqcxTotc_piQMtZg)
 
-on seHammer's starting point
+>on seHammer's starting point
+
 日本語です。
-for javascripting,
+
+>for javascripting,
+
 Accsess の 学習も 進めます。
-Http css javascript -> JAVA -> C++
+
+>Http css javascript -> JAVA -> C++
