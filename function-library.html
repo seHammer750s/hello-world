@@ -35,6 +35,12 @@
         }
         return num;
     }
+    function sample01(num){
+        return Math.floor(Math.random()*num);
+    }
+    function sample02(num){
+        return Math.floor(num * 2 * Math.PI);
+    }
     
     input.onchange = function(){
         const num = input.value;
@@ -44,6 +50,8 @@
             para.textContent =  num + ' squared is ' + squared(num) + '. ';
             para.textContent += num + ' cubed is ' + cubed(num) + '. ';
             para.textContent += num + ' factorial is ' + factorial(num) + '. ';
+            para.textContent += num + ' Ramdom number is ' + sample01(num) + '. ';
+            para.textContent += num + ' circumference is ' + sample02(num) + '. ';
         }
     }
   </script>
