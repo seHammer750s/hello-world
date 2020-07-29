@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+
+  const myFavouriteBand = {
+      name:'LONGMAN',
+      nationality:'JAPAN',
+      genr:'ROCK',
+      member:'3',
+      formed:'2000',
+      split:'false',
+      albums:{
+        album1:{name:'wish on',released:'2005'},
+        album2:{name:'replay',released:'2010'}
+      }      
+  }
+  bandInfo = myFavouriteBand.name + ', ' +myFavouriteBand.nationality + ', ' + myFavouriteBand.genr + ', ' + myFavouriteBand.albums.album1.name + ', ' + myFavouriteBand.albums.album1.released;
+  
+  /*
+          bandinfo:function(){
+          bandInfo = this.name +', '+ this.nationality;
+
+  */
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
