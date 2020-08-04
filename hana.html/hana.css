@@ -1,0 +1,258 @@
+﻿@charset "UTF-8";
+body{
+  background-color:#fffacd;
+  color:#5a544b;
+  font-family:"ヒラギノ角ゴ Pro W3",
+  		"Hiragino Kaku Gothic Pro","メイリオ",
+  		Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",
+  		sans-serif;
+  font-size:100%;
+  margin:0;
+  padding:0;
+}
+body#top{
+  background-image: url(images/top_kabe.gif);
+}
+/*それぞれの領域の幅を指定*/
+header,nav,div#topimg,div#contents,footer{
+	width: 900px;
+	margin: 0 auto;
+}
+/*ヘッダー領域のCSS*/
+header{
+	text-align: center;
+}
+header h1{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
+	color: #008000;
+	font-family: 'ＭＳ 明朝';
+	font-size: 48px;
+	font-style: italic;
+}
+header p{
+	margin-top: 0;
+	font-family: 'ＭＳ 明朝';
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+/*ナビゲーション領域のＣＳＳ*/
+nav ul{
+	padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+}
+nav ul li{
+	width: 180px;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ffff99;
+	border: solid 1px #999900;
+	height: 45px;
+	box-sizing: border-box;
+}
+nav ul li a{
+	text-decoration: none;
+}
+nav ul li a:hover{
+	background-color: #999900;
+	color: #ffff66;
+}
+nav ul li a{
+	display: block;
+}
+/*トップ画像のＣＳＳ*/
+div#topimg{
+	width: 900px;
+	height: 320px;
+}
+/*メインコンテンツのＣＳＳ*/
+div#contents{
+	overflow: hidden;
+}
+div#contents article{
+	width: 700px;
+	float: left;
+}
+div#contents article h2{
+	text-align: center;
+	width: 685px;
+	margin-top: 15px;
+	font-weight: lighter;
+	border-top: dotted 2px #808080;
+	border-bottom: dotted 2px #808080; 
+}
+/*　メインコンテンツ　id aisatu*/
+section#aisatu{
+	width: 685px;
+}
+section#aisatu h3{
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #1e50a2;
+}
+section#aisatu p{
+	margin-top: 0;
+	color: #000000;
+	text-indent: 1em;
+}
+/*　メインコンテンツ　id new*/
+section#new h3{
+	margin-bottom: 0;
+	padding-left: 10px;
+	color: #ffffff;
+	background-color: #aa5500;
+}
+section#new ul{
+	width: 665px;
+	margin-top: 0;
+	padding: 0 10px;
+	list-style: none;
+}
+section#new ul li{
+	padding-top: 15px;
+	border-bottom: solid 1px #999999;
+}
+section#new time{
+	font-weight: bold;
+}
+div#contents aside{
+	width: 200px;
+	float: right;
+}
+/*サブ領域のＣＳＳ*/
+aside dl dt{
+	height: 0;
+	overflow: hidden;
+	padding-top: 46px;
+	background-repeat: no-repeat;
+}
+aside dl dt#migoro{
+	background-image: url(images/nav_migoro.png);
+}
+aside dl dt#toiawase{
+	background-image: url(images/nav_toi.png);
+}
+aside a:hover dl dt{
+	background-position: left 0 top -46px;
+}
+aside dl dd{
+	margin-left: 0;
+}
+aside a{
+	text-decoration: none;
+	font-size: 87.5%;
+}
+/*フッター領域のＣＳＳ*/
+footer{
+	text-align: right;
+}
+footer address,footer #copyright{
+	margin: 0;
+	text-align: center;
+}
+/*パンくずリスト*/
+div#breadcrumb{
+	width: 900px;
+	margin: 0 auto;
+}
+div#breadcrumb p{
+	margin-bottom: 0;
+}
+/*サブページのＣＳＳ*/
+figure{
+	width: 220px;
+	height: 380px;
+	margin: 0 10px 10px 0;
+	border: solid 1px #808080;
+	float: left;
+	overflow: hidden;
+}
+figcaption{
+	margin-top: 5px;
+	font-weight: bold;
+	text-align: center;
+}
+figure img{
+	margin: 5px 5px 0;
+	width: 210px;
+	height: 158px;
+}
+figure p{
+	margin: 0 0 0 3px;
+}
+/*テーブル領域のＣＳＳ*/
+table{
+	border-collapse: collapse;
+	border: solid 1px #808080;
+	margin-bottom:20px;
+	width: 685px;
+}
+table th,table td{
+	border: solid 1px #808080;
+	padding: 6px;
+}
+caption{
+	text-align: center;
+}
+caption p{
+	margin-top: 0;
+}
+table tr th:first-child,table tr th:nth-child(2){
+	width: 100px;
+}
+table tr th:nth-child(3){
+	width: 150px;
+}
+table tbody tr td{
+	vertical-align: top;
+}
+table thead tr th{
+	background-color: #68be8d;
+}
+table tbody tr:nth-child(odd){
+	background-color: #ddffbc;
+}
+table tbody tr:nth-child(even){
+	background-color: #b7ffb7;
+}
+table tbody tr th{
+	background-color: #98d98e;
+}
+/*お問い合わせフォームのＣＳＳ*/
+form[name="toi"]{
+	background-color: #ddffbc;
+	background-image: url(images/form_img.png);
+	border-radius: 20px;
+	width: 450px;
+	margin: 0 auto 20px;
+	padding: 3px 20px;
+}
+form[name="toi"] p{
+	margin-bottom: 25px;
+	color: #664032;
+}
+form[name="toi"] input[type="text"]{
+	width: 200px;
+}
+form[name="toi"] input[type="email"]{
+	width: 300px;
+}
+form[name="toi"] p#chk label{
+	display: inline-block;
+}
+form[name="toi"] textarea{
+	width: 420px;
+	height: 100px;
+	overflow-y: scroll;
+}
+form[name="toi"] input[required]{
+	background-color: #d3ffa8;
+}
+article #formtoi{
+	text-align: center;
+}
